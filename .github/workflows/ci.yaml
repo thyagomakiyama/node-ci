@@ -12,9 +12,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'npm'
         env:
           FORCE_COLOR: 0
+      - run: npm install
       - run: npm test
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master

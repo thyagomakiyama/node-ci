@@ -12,7 +12,7 @@ class Person {
         return this.age;
     }
 
-    sayHallo() {
+    sayHello() {
         return 'Opa! My name is ' + this.name + '. I am ' + this.age + ' years old.'
     }
 
